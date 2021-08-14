@@ -12,7 +12,7 @@ namespace GameCodingNight
             string o = "O";
             int i;
             //int next = 0;
-         string[] p = new string[9];
+         string[] p = new string[9] { " ", " ", " ", " ", " ", " ", " ", " ", " "};
             Console.WriteLine("Welcome to game night three");
             Console.ReadLine();
             Console.Clear();
@@ -47,12 +47,11 @@ namespace GameCodingNight
             Console.Clear();
             Console.WriteLine("new game\n");
 
-   
-            Console.WriteLine("   " + p[count] + "   " + "|" + "    " + p[count] + "   " + "|" + "    " + p[count] + "    ");
-            Console.WriteLine("- - -"+" + "+ "- - -" + " + " + "- - -");
-            Console.WriteLine("   " + p[count] + "   " + "|" + "    " + p[count] + "   " + "|" + "    " + p[count] + "    ");
-            Console.WriteLine("- - -" + " + " + "- - -" + " + " + "- - -");
-            Console.WriteLine("   " + p[count] + "   " + "|" + "    " + p[count] + "   " + "|" + "    " + p[count] + "    ");
+            Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+            Console.WriteLine("---+---+---");
+            Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+            Console.WriteLine("---+---+---");
+            Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
             Console.WriteLine();
 
             do
@@ -86,15 +85,16 @@ namespace GameCodingNight
                     case 1:
                         if (count % 2 == 0)
                         {
-                            if (p[0] == null)
+                            if (p[0] == " ")
                             {
                                 p[0] = x;
-                              Console.WriteLine(" " +" "+ p[0]+" " + " " + "|" + " " +" "+ p[1] +" "+" " + "|" + " " +" "+ p[2] +" "+ " ");
-                              Console.WriteLine("-  -  -+-"+"- - -+-"+"- -");
-                              Console.WriteLine("   " + p[3] + "   " + " | " + "    " + p[4] + "   " + " | " + "    " + p[5] + "    ");
-                              Console.WriteLine("- - -" + " + " + "- - -" + " + " + "- - -");
-                              Console.WriteLine("   " + p[6] + "   " + " | " + "    " + p[7] + "   " + " | " + "    " + p[8] + "    ");
-                              Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
+                                Console.WriteLine();
                                 count++;
                             }
                             else
@@ -102,14 +102,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[0] == null)
+                            if (p[0] == " ")
                             {
                                 p[0] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -121,14 +122,15 @@ namespace GameCodingNight
                     case 2:
                         if (count % 2 == 0)
                         {
-                            if (p[1] == null)
+                            if (p[1] == " ")
                             {
                                 p[1] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -137,15 +139,16 @@ namespace GameCodingNight
                         }
                         else
                         {
-                           if (p[1] == null)
+                           if (p[1] == " ")
                             {
                                 p[1] = o;
-                              Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                              Console.WriteLine("- - - + - - - + - - -");
-                              Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                              Console.WriteLine("- - - + - - - + - - -");
-                              Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
-                              Console.WriteLine();
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
+                                Console.WriteLine();
                                 count++;
                             }
                             else
@@ -156,14 +159,15 @@ namespace GameCodingNight
                     case 3:
                         if (count % 2 == 0)
                         {
-                            if (p[2] == null)
+                            if (p[2] == " ")
                             {
                                 p[2] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -172,14 +176,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[2] == null)
+                            if (p[2] == " ")
                             {
                                 p[2] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -191,14 +196,15 @@ namespace GameCodingNight
                     case 4:
                         if (count % 2 == 0)
                         {
-                            if (p[3] == null)
+                            if (p[3] == " ")
                             {
                                 p[3] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -207,14 +213,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[3] == null)
+                            if (p[3] == " ")
                             {
                                 p[3] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -226,14 +233,15 @@ namespace GameCodingNight
                     case 5:
                         if (count % 2 == 0)
                         {
-                            if (p[4] == null)
+                            if (p[4] == " ")
                             {
                                 p[4] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -242,14 +250,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[4] == null)
+                            if (p[4] == " ")
                             {
                                 p[4] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -262,14 +271,15 @@ namespace GameCodingNight
                     case 6:
                         if (count % 2 == 0)
                         {
-                            if (p[5] == null)
+                            if (p[5] == " ")
                             {
                                 p[5] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -278,14 +288,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[5] == null)
+                            if (p[5] == " ")
                             {
                                 p[5] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -298,14 +309,15 @@ namespace GameCodingNight
                     case 7:
                         if (count % 2 == 0)
                         {
-                            if (p[6] == null)
+                            if (p[6] == " ")
                             {
                                 p[6] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -314,14 +326,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[6] == null)
+                            if (p[6] == " ")
                             {
                                 p[6] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -334,14 +347,15 @@ namespace GameCodingNight
                     case 8:
                         if (count % 2 == 0)
                         {
-                            if (p[7] == null)
+                            if (p[7] == " ")
                             {
                                 p[7] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -350,14 +364,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[7] == null)
+                            if (p[7] == " ")
                             {
                                 p[7] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -370,14 +385,15 @@ namespace GameCodingNight
                     case 9:
                         if (count % 2 == 0)
                         {
-                            if (p[8] == null)
+                            if (p[8] == " ")
                             {
                                 p[8] = x;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
@@ -386,14 +402,15 @@ namespace GameCodingNight
                         }
                         else
                         {
-                            if (p[8] == null)
+                            if (p[8] == " ")
                             {
                                 p[8] = o;
-                                Console.WriteLine("   " + p[0] + "   " + "|" + "    " + p[1] + "   " + "|" + "    " + p[2] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[3] + "   " + "|" + "    " + p[4] + "   " + "|" + "    " + p[5] + "    ");
-                                Console.WriteLine("- - - + - - - + - - -");
-                                Console.WriteLine("   " + p[6] + "   " + "|" + "    " + p[7] + "   " + "|" + "    " + p[8] + "    ");
+                                Console.WriteLine();
+                                Console.WriteLine($" { p[0]} | {p[1]} | {p[2]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[3]} | {p[4]} | {p[5]} ");
+                                Console.WriteLine("---+---+---");
+                                Console.WriteLine($" {p[6]} | {p[7]} | {p[8]} ");
                                 Console.WriteLine();
                                 count++;
                             }
